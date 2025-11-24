@@ -1,305 +1,304 @@
-# Murf AI Voice Agents Challenge - Day 3 Complete ⚡
 
-Welcome to my **Murf AI Voice Agents Challenge** Day 3 submission!
+---
 
-This repository contains my implementation of the **Health & Wellness Voice Companion** - a supportive daily check-in agent with JSON persistence.
+# 🌿 Murf AI Voice Agents Challenge – Day 3: Health & Wellness Companion
 
-## 🎯 Challenge Task
+This repository contains my submission for **Day 3** of the **Murf AI Voice Agents Challenge**, featuring a fully functional **Health & Wellness Voice Companion** with JSON-based persistence and contextual memory.
 
-**Day 3 Objective**: Build a health and wellness voice companion that conducts daily check-ins and stores data in JSON.
+---
 
-### Primary Goal ✅
-- Clear, grounded system prompt for wellness companion
-- Daily check-ins via voice about mood, energy, and goals
-- JSON file persistence for all check-ins
-- Reference past data in new conversations
+## 🎯 Challenge Objective
 
-### What I Built:
+### **Day 3 Goal**
 
-✅ Supportive, non-medical wellness companion
-✅ Daily check-in conversation flow:
-  - Mood assessment
-  - Energy level check
-  - Stress/concerns inquiry
-  - 1-3 daily objectives/intentions
-  - Simple, actionable advice
-  - Recap and confirmation
-✅ JSON-based persistence (`wellness_log.json`)
-✅ Previous check-in context loading
-✅ Natural reference to past sessions
-✅ 5 function tools for data collection:
-  - `set_mood()` - Record current mood
-  - `set_energy()` - Record energy level
-  - `set_stress()` - Note stress/concerns
-  - `add_objective()` - Add daily goals
-  - `add_note()` - Additional reflections
-  - `complete_checkin()` - Save to JSON log
+Build a wellness voice companion that performs daily check-ins using natural voice interaction and saves all user data in JSON format.
 
-### What I Accomplished:
+### **Core Requirements**
 
-✅ Set up the complete development environment (Python 3.11, Node.js, pnpm, uv)
-✅ Configured backend with Murf Falcon TTS integration
-✅ Configured frontend Next.js application
-✅ Downloaded and set up LiveKit Server
-✅ Successfully connected all services (LiveKit, Backend Agent, Frontend)
-✅ Had my first real-time voice conversation with the AI agent
-✅ Pushed code to GitHub repository
+* Well-defined system prompt for a supportive wellness companion
+* Voice-based daily conversations
+* Collect daily mood, energy, goals, and concerns
+* Persist all check-ins in a `.json` file
+* Reference previous logs in future sessions
 
-## 🎯 Day 2 Task - Coffee Shop Barista Agent
+---
 
-**Status: ✅ Complete (including Advanced Challenge)**
+## ✨ What I Built
 
-### What I Built:
+### ✅ **Wellness Voice Companion**
 
-✅ Created "Brew" - a friendly barista persona at Murf's Coffee House
-✅ Implemented order state management system
-✅ Built 6 function tools for order collection:
-  - `set_drink_type()` - Capture coffee type
-  - `set_size()` - Set drink size (small/medium/large)
-  - `set_milk()` - Choose milk preference
-  - `add_extra()` - Add extras like whipped cream, syrups, etc.
-  - `set_customer_name()` - Get customer name
-  - `complete_order()` - Validate and save order to JSON
-✅ Orders automatically saved to `backend/orders/` directory with timestamp
-✅ Agent asks clarifying questions to fill all required fields
-✅ **Advanced Challenge: Real-time HTML Beverage Visualization**
-  - Dynamic coffee cup rendering that updates in real-time
-  - Cup size changes based on order (small/medium/large)
-  - Visual whipped cream topping when ordered
-  - Animated drink filling effect
-  - Live order details display
-  - Completion status indicator
-  - Data streaming via LiveKit data channels
-✅ Order history display during session
-✅ Compact UI that doesn't obstruct conversation
-✅ Starbucks-inspired green theme
-✅ Persistent beverage display until session ends
+A supportive, non-medical wellness agent that:
 
-## About the Challenge
+* Conducts structured daily check-ins
+* Provides simple, actionable tips
+* Saves each check-in to `wellness_log.json`
+* Loads and references past logs naturally
 
-Building **10 AI Voice Agents over 10 Days** using **Murf Falcon** – the consistently fastest TTS API!
+### ✅ **Daily Check-In Flow**
 
-This is Day 1 of the **#MurfAIVoiceAgentsChallenge** #10DaysofAIVoiceAgents
+* Mood assessment
+* Energy level check
+* Stress/concern inquiry
+* Collection of 1–3 daily intentions
+* Additional notes support
+* Summary + confirmation
+* Auto-saved JSON record
 
-## Repository Structure
+### ✅ **Function Tools Implemented**
 
-This is a **monorepo** that contains both the backend and frontend for building voice agent applications.
+| Function             | Purpose                  |
+| -------------------- | ------------------------ |
+| `set_mood()`         | Record user mood         |
+| `set_energy()`       | Capture energy level     |
+| `set_stress()`       | Store stress/concerns    |
+| `add_objective()`    | Add daily goals          |
+| `add_note()`         | Add optional reflections |
+| `complete_checkin()` | Save all data to JSON    |
+
+---
+
+## ⚙️ Technical Achievements (Day 3)
+
+* Set up complete development environment (Python 3.11, Node.js, pnpm, uv)
+* Integrated **Murf Falcon TTS**
+* Linked **Google Gemini** for reasoning
+* Integrated **Deepgram STT**
+* Fully connected backend + frontend + LiveKit
+* Built JSON-based persistence layer
+* Held real-time voice conversations with agent
+* Pushed complete code to GitHub
+
+---
+
+## ☕ Day 2 Recap – Coffee Shop Barista Agent (Completed)
+
+### ✔ Highlights
+
+* “**Brew**” — friendly barista persona
+* Order state management system
+* JSON order logging
+* Clarifying questions before finalizing order
+
+### ✔ Tools Implemented
+
+* `set_drink_type()`
+* `set_size()`
+* `set_milk()`
+* `add_extra()`
+* `set_customer_name()`
+* `complete_order()`
+
+### ✔ Advanced Challenge Completed
+
+* Real-time beverage visualization (HTML/CSS/JS)
+* Dynamic cup size
+* Animation for filling drink
+* Toppings rendering
+* Live order summary
+* Smooth UI with Starbucks-styled theme
+
+---
+
+## 📁 Repository Structure
 
 ```
 ten-days-of-voice-agents-2025/
-├── backend/          # LiveKit Agents backend with Murf Falcon TTS
-├── frontend/         # React/Next.js frontend for voice interaction
-├── challenges/       # Daily challenge tasks
-└── README.md         # This file
+├── backend/          # LiveKit Agents backend (Python)
+├── frontend/         # Next.js UI for voice interaction
+├── challenges/       # Daily task documentation
+└── README.md         # Project documentation
 ```
 
-### Backend
+---
 
-The backend is based on [LiveKit's agent-starter-python](https://github.com/livekit-examples/agent-starter-python) with modifications to integrate **Murf Falcon TTS** for ultra-fast, high-quality voice synthesis.
+## 🧠 Backend (Python)
 
-**Features:**
-
-- Complete voice AI agent framework using LiveKit Agents
-- Murf Falcon TTS integration for fastest text-to-speech
-- LiveKit Turn Detector for contextually-aware speaker detection
-- Background voice cancellation
-- Integrated metrics and logging
-- Complete test suite with evaluation framework
-- Production-ready Dockerfile
-
-### Frontend
-
-The frontend is based on [LiveKit's agent-starter-react](https://github.com/livekit-examples/agent-starter-react), providing a modern, beautiful UI for interacting with your voice agents.
+Built using **LiveKit Agents** + **Murf Falcon TTS**.
 
 **Features:**
 
-- Real-time voice interaction with LiveKit Agents
-- Camera video streaming support
-- Screen sharing capabilities
-- Audio visualization and level monitoring
-- Light/dark theme switching
-- Highly customizable branding and UI
-- Real-time beverage visualization with animations
-- Order history display
+* Streaming TTS
+* Speaker turn detection
+* Noise/background cancellation
+* Function calling
+* LLM-driven dialog
+* JSON persistence
+* Docker support
+* Integrated evaluation test suite
 
-## Quick Start
+---
 
-### Prerequisites
+## 🎨 Frontend (React/Next.js)
 
-Make sure you have the following installed:
+Based on LiveKit's **agent-starter-react** template.
 
-- **Python 3.11 or 3.12** (Python 3.14 not yet supported by all dependencies)
-- **uv package manager**: `pip install uv`
-- **Node.js 18+** with **pnpm**: `npm install -g pnpm`
-- **LiveKit Server**: Download from [LiveKit Releases](https://github.com/livekit/livekit/releases)
+**Features:**
 
-### Required API Keys
+* Live voice interaction
+* Microphone & camera streaming
+* Real-time audio visualization
+* Data channel integration
+* Light/dark themes
+* Custom UI branding
+* Barista-inspired beverage visualization (Day 2)
 
-- **MURF_API_KEY** - Get from [Murf.ai](https://murf.ai/api)
-- **GOOGLE_API_KEY** - Get from [Google AI Studio](https://makersuite.google.com/app/apikey)
-- **DEEPGRAM_API_KEY** - Get from [Deepgram Console](https://console.deepgram.com/)
+---
 
-### 1. Clone This Repository
+## 🚀 Quick Start
+
+### **1. Prerequisites**
+
+* Python 3.11 or 3.12
+* uv package manager
+* Node.js 18+ with pnpm
+* LiveKit Server binary
+
+---
+
+### **2. Clone Repository**
 
 ```bash
-git clone https://github.com/GhanshyamJha05/Day3_Wellness_Companion_MurfAI.git
-cd Day3_Wellness_Companion_MurfAI
+https://github.com/vikasyadav097/AI-Voice-Agents-Challenge-Day-3-Health-Wellness-Voice-Companion- 
 ```
 
-### 2. Backend Setup
+---
+
+### **3. Backend Setup**
 
 ```bash
 cd backend
-
-# Install dependencies (use Python 3.11 or 3.12)
 uv sync --python 3.11
+```
 
-# Create .env.local file with your API keys
-# Copy from .env.example and add:
+Create `.env.local`:
+
+```
 LIVEKIT_URL=ws://127.0.0.1:7880
 LIVEKIT_API_KEY=devkey
 LIVEKIT_API_SECRET=secret
 MURF_API_KEY=<your-murf-api-key>
 GOOGLE_API_KEY=<your-google-api-key>
 DEEPGRAM_API_KEY=<your-deepgram-api-key>
+```
 
-# Download required models
+Download required models:
+
+```bash
 uv run python src/agent.py download-files
 ```
 
-For LiveKit Cloud users, you can automatically populate credentials:
+---
 
-```bash
-lk cloud auth
-lk app env -w -d .env.local
-```
-
-### 3. Frontend Setup
+### **4. Frontend Setup**
 
 ```bash
 cd ../frontend
-
-# Install dependencies
 pnpm install
+```
 
-# Create .env.local file
+Add `.env.local`:
+
+```
 LIVEKIT_API_KEY=devkey
 LIVEKIT_API_SECRET=secret
 LIVEKIT_URL=ws://127.0.0.1:7880
 ```
 
-### 4. Download and Run LiveKit Server
+---
 
-**Download LiveKit Server:**
-- Visit [LiveKit Releases](https://github.com/livekit/livekit/releases)
-- Download `livekit_X.X.X_windows_amd64.zip` (or your OS version)
-- Extract to project root
+### **5. Run LiveKit Server**
 
-### 5. Run the Application
-
-Run these in **3 separate terminals**:
-
-**Terminal 1 - LiveKit Server:**
 ```bash
-# Windows
-.\livekit-server.exe --dev
-
-# Mac/Linux
-./livekit-server --dev
+.\livekit-server.exe --dev   # Windows
+# ./livekit-server --dev     # Mac/Linux
 ```
 
-**Terminal 2 - Backend Agent:**
+---
+
+### **6. Run Backend**
+
 ```bash
 cd backend
-# Activate virtual environment (Windows PowerShell)
 .venv\Scripts\Activate.ps1
-# Then run
-python src\agent.py dev
+python src/agent.py dev
 ```
 
-**Terminal 3 - Frontend:**
+---
+
+### **7. Run Frontend**
+
 ```bash
 cd frontend
 pnpm dev
 ```
 
-**Open http://localhost:3000 in your browser!** 🎉
-
-## 🎨 Features
-
-### Voice Agent Features
-- Natural conversation with Murf's ultra-fast Falcon TTS
-- Google's Gemini LLM for intelligent, empathetic responses
-- Deepgram STT for accurate speech recognition
-- Supportive, grounded wellness check-ins
-- Non-medical, non-diagnostic approach
-- JSON-based data persistence
-- Context-aware conversations referencing previous check-ins
-
-### Wellness Check-in Flow
-1. **Greeting** - Warm welcome with reference to previous session
-2. **Mood Assessment** - "How are you feeling today?"
-3. **Energy Check** - "What's your energy level like?"
-4. **Stress Inquiry** - "Anything stressing you out?"
-5. **Daily Objectives** - "What 1-3 things would you like to accomplish?"
-6. **Practical Advice** - Small, actionable suggestions
-7. **Recap & Confirmation** - Summary of mood, energy, and goals
-8. **Data Persistence** - Save to `wellness_log.json`
-
-### Data Structure
-Each check-in stores:
-- Date and timestamp
-- Mood (text description)
-- Energy level (text description)
-- Stress/concerns (optional)
-- Objectives (array of 1-3 goals)
-- Additional notes (optional)
-- Auto-generated summary
-
-## 📅 Challenge Progress
-
-- **Day 1**: ✅ Get Your Starter Voice Agent Running - [Repository Link](https://github.com/GhanshyamJha05/first_day_Task-Murf-AI-)
-- **Day 2**: ✅ Coffee Shop Barista Agent (+ Advanced Challenge) - [Repository Link](https://github.com/GhanshyamJha05/Second_day_task_murfAI)
-- **Day 3**: ✅ Health & Wellness Voice Companion - **THIS REPOSITORY**
-- **Day 4**: 🔜 Coming soon...
-- **Day 5**: 🔜 Coming soon...
-- **Day 6**: 🔜 Coming soon...
-- **Day 7**: 🔜 Coming soon...
-- **Day 8**: 🔜 Coming soon...
-- **Day 9**: 🔜 Coming soon...
-- **Day 10**: 🔜 Coming soon...
-
-## Documentation & Resources
-
-- [Murf Falcon TTS Documentation](https://murf.ai/api/docs/text-to-speech/streaming)
-- [LiveKit Agents Documentation](https://docs.livekit.io/agents)
-- [Original Backend Template](https://github.com/livekit-examples/agent-starter-python)
-- [Original Frontend Template](https://github.com/livekit-examples/agent-starter-react)
-
-## 🛠️ Tech Stack
-
-- **Backend**: Python 3.11, LiveKit Agents, Murf Falcon TTS, Google Gemini LLM, Deepgram STT
-- **Frontend**: Next.js 15, React 19, TypeScript, Tailwind CSS, Framer Motion
-- **Real-time Communication**: LiveKit Server with Data Channels
-- **Package Managers**: uv (Python), pnpm (Node.js)
-
-## 📝 Notes
-
-- Use Python 3.11 or 3.12 (not 3.14) for compatibility
-- All three services must be running simultaneously
-- API keys are stored in `.env.local` files (not committed to Git)
-- LiveKit server binary files are excluded from Git (download when needed)
-
-## License
-
-This project is based on MIT-licensed templates from LiveKit and includes integration with Murf Falcon. See individual LICENSE files in backend and frontend directories for details.
-
-## Have Fun!
-
-Remember, the goal is to learn, experiment, and build amazing voice AI agents. Don't hesitate to be creative and push the boundaries of what's possible with Murf Falcon and LiveKit!
-
-Good luck with the challenge!
+Open: **[http://localhost:3000](http://localhost:3000)**
 
 ---
 
-Built for the AI Voice Agents Challenge by murf.ai
+## 📑 Data Structure
+
+Each check-in entry includes:
+
+* Timestamp
+* Mood
+* Energy level
+* Stress notes
+* Daily objectives
+* Additional reflections
+* Auto-generated summary
+
+Saved in:
+
+```
+backend/wellness_log.json
+```
+
+---
+
+## 📅 Challenge Progress
+
+| Day      | Status         |
+| -------- | -------------- |
+| Day 1    | ✅ Completed    |
+| Day 2    | ✅ Completed    |
+| Day 3    | ✅ Completed    |
+| Day 4–10 | 🔜 Coming soon |
+                                                                                            |
+
+---
+
+## 🛠 Tech Stack
+
+**Backend:** Python, LiveKit Agents, Murf Falcon TTS, Google Gemini, Deepgram STT
+**Frontend:** Next.js 15, React 19, Tailwind, TypeScript, Framer Motion
+**Communication:** LiveKit Server
+**Package Managers:** uv (Python), pnpm (Node.js)
+
+---
+
+## 📚 Resources
+
+* Murf Falcon API
+* LiveKit Agents
+* Deepgram STT
+* Gemini developer docs
+
+---
+
+## 📄 License
+
+Based on MIT-licensed starter templates provided by LiveKit.
+
+---
+
+## 🙌 Final Note
+
+This project is part of the **10 Days of AI Voice Agents Challenge** by Murf.ai.
+The goal: build, learn, innovate, and push the limits of voice AI.
+
+---
+
+
+
+Just tell me!
